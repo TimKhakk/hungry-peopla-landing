@@ -1,0 +1,21 @@
+{
+  "name": "hungry-people-landing",
+  "version": "1.0.0",
+  "description": "landing-page",
+  "main": "index.html",
+  "scripts": {
+    "gulp": "gulp",
+    "gulp build": "gulp build"
+  },
+  "author": "Timur Khakkiev",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.38.0"
+  }
+}
