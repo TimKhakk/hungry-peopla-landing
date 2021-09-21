@@ -1,0 +1,146 @@
+.first {
+	height: 100vh;
+	position: relative;
+}
+
+main {
+	position: relative;
+	color: white;
+	text-align: center;
+
+	height: calc(100% - 100px);
+
+	.container {
+		display: grid;
+		grid-template-columns: 1fr min(80%, 850px) 1fr;
+		place-items: center;
+		position: relative;
+	}
+
+	aside {
+		color: white;
+		height: 100%;
+		width: 100%;
+	}
+
+	.left-aside {
+		border-right: 1px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.la-text {
+		writing-mode: vertical-lr;
+		text-orientation: upright;
+	}
+	.right-aside {
+		display: grid;
+		justify-content: flex-end;
+		align-items: center;
+		border-left: 1px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.ra-content {
+		display: grid;
+		row-gap: 20px;
+	}
+
+	.icon-wrapper {
+		display: grid;
+		place-items: center;
+		width: 60px;
+		height: 60px;
+		background: transparent;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: 50%;
+	}
+
+	.content {
+		display: grid;
+		color: white;
+		width: 100%;
+	}
+
+	p {
+		font-size: 0.75em;
+		line-height: 1.2em;
+		letter-spacing: 0.5em;
+
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+
+	.line {
+		display: block;
+		place-self: center;
+		width: 60px;
+		height: 5px;
+		border-radius: 50px;
+		background: $primary-color;
+		margin: 20px 0 30px;
+	}
+
+	.btns {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	button {
+		color: white;
+		width: 200px;
+		height: 60px;
+		font-size: 0.75em;
+		line-height: 1.667em;
+		background: $primary-color;
+		border-radius: 5px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	button:last-child {
+		margin-left: 40px;
+		background: transparent;
+		border: 2px solid white;
+	}
+
+	.hor-top-line {
+		background: rgba(255, 255, 255, 0.2);
+		align-self: flex-start;
+		position: absolute;
+
+		top: 13%;
+		height: calc(77% - 60px);
+		width: 1px;
+	}
+
+	.hor-bot-line {
+		background: rgba(255, 255, 255, 0.2);
+		align-self: flex-end;
+		position: absolute;
+		height: 10%;
+		width: 1px;
+	}
+
+	.next {
+		display: grid;
+		place-items: center;
+		position: absolute;
+
+		align-self: flex-end;
+		bottom: 10%;
+		width: 60px;
+		height: 60px;
+		background: transparent;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: 50%;
+
+		div {
+			width: 40px;
+			height: 40px;
+			background: white;
+			border-radius: 50%;
+			display: grid;
+			place-items: center;
+		}
+	}
+}

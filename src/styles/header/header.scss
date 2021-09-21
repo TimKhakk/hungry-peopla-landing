@@ -1,0 +1,35 @@
+header {
+	display: grid;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 0.75em;
+	line-height: 1.5em;
+
+	color: white;
+
+	nav {
+		display: grid;
+		align-items: center;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 220px;
+	}
+
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		padding: 41px 35px 40px 35px;
+	}
+
+	li {
+		font-weight: bold;
+	}
+
+	img {
+		top: 25px;
+		justify-self: center;
+		position: absolute;
+		z-index: 999;
+	}
+}
