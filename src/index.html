@@ -34,17 +34,17 @@
 				</div>
 			</header>
 			<main>
-				<span class="container">
+				<div class="container">
 					<aside class="left-aside">
-            <span class="la-text">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
+						<span class="la-text">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
 					</aside>
 					<div class="content">
-						<p>restaurant</p>
+						<p class="preheading">restaurant</p>
 						<h1>Hungry people</h1>
 						<span class="line"></span>
 						<div class="btns">
-							<button>Book table</button>
-							<button>Explore</button>
+							<button class="button">Book table</button>
+							<button class="button">Explore</button>
 						</div>
 					</div>
 					<aside class="right-aside">
@@ -75,10 +75,143 @@
 							</svg>
 						</div>
 					</a>
-					<span class="hor-top-line"></span>
-					<span class="hor-bot-line"></span>
+					<span class="hor-line top"></span>
+					<span class="hor-line bot"></span>
+
+					<span class="hor-line left"></span>
+					<span class="hor-line right"></span>
 				</div>
 			</main>
 		</div>
+
+		<section class="about">
+			<div class="container">
+				<div class="content">
+					<h2>About us</h2>
+					<span class="line"></span>
+					<p class="subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+						molestie est a, tempor magna.
+					</p>
+					<p class="text">
+						Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non
+						ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros,
+						a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+						pharetra. Nulla facilisis semper laoreet.
+					</p>
+				</div>
+
+				<div class="section-img-block">
+					<img class="section-img" src="images/about-img.png" alt="" />
+					<span class="square"></span>
+				</div>
+			</div>
+		</section>
+
+		<section class="team alt">
+			<div class="container">
+				<p class="preheading">our team</p>
+				<div class="section-img-block">
+					<img
+						class="section-img"
+						src="images/team-img.png"
+						alt="повар женщина украшает тарелку с едой"
+					/>
+					<span class="square"></span>
+				</div>
+				<div class="content">
+					<h2 class="white">Master chef</h2>
+					<span class="line"></span>
+					<p class="subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+						molestie est a, tempor magna.
+					</p>
+					<p class="text">
+						Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non
+						ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros,
+						a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+						pharetra. Nulla facilisis semper laoreet.
+					</p>
+				</div>
+			</div>
+			<img src="images/team-bg.png" alt="сковородка с жаренными овощами" class="bg" />
+
+			<span class="hor-line left"></span>
+			<span class="hor-line center"></span>
+			<span class="hor-line right"></span>
+		</section>
+
+		<section class="book">
+			<div class="container">
+				<div class="content">
+					<h2>book a table</h2>
+					<span class="line"></span>
+					<form action="submit">
+						<input type="name" placeholder="Name" required />
+						<input type="mail" placeholder="Email" />
+						<input type="phone" placeholder="Phone" required />
+						<select type="number" placeholder="People" required>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5+">5+</option>
+						</select>
+						<input type="date" placeholder="Date" required />
+						<input
+							type="time"
+							placeholder="Time"
+							min="10:00"
+							max="22:00"
+							title="opening at 10:00. closing at 22:00"
+						/>
+						<button class="button">book now</button>
+					</form>
+				</div>
+
+				<div class="section-img-block">
+					<img class="section-img" src="images/book-img.png" alt="" />
+					<span class="square"></span>
+				</div>
+
+				<p class="postheading">
+					Mon - Fri: <strong>8PM - 10PM,</strong> Sat - Sun: <strong>8PM - 3AM,</strong> Phone:
+					<strong>+40 729 131 637/+40 726 458 782</strong>
+				</p>
+			</div>
+		</section>
+
+		<section class="galerie alt">
+			<div class="container">
+				<p class="preheading">specialties</p>
+				<div class="section-img-block">
+					<img
+						class="section-img"
+						src="images/galerie-img.png"
+						alt="повар женщина украшает тарелку с едой"
+					/>
+					<span class="square"></span>
+				</div>
+				<div class="content">
+					<h2 class="white">chocolate pancakes</h2>
+					<span class="line"></span>
+					<p class="subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+						molestie est a, tempor magna.
+					</p>
+					<p class="text">
+						Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non
+						ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros,
+						a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+						pharetra. Nulla facilisis semper laoreet.
+					</p>
+				</div>
+			</div>
+			<img src="images/galerie-bg.png" alt="сковородка с жаренными овощами" class="bg" />
+
+			<span class="hor-line left"></span>
+			<span class="hor-line center"></span>
+			<span class="hor-line right"></span>
+		</section>
 	</body>
 </html>

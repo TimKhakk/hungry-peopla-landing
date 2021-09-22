@@ -1,0 +1,16 @@
+.book {
+	.line {
+		margin-bottom: 20px;
+	}
+	.content {
+		margin: 0;
+		width: 94%;
+		align-self: center;
+		justify-self: end;
+	}
+	.postheading {
+		position: absolute;
+		align-self: flex-end;
+		bottom: 43px;
+	}
+}

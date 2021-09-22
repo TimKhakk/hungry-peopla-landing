@@ -1,0 +1,15 @@
+section.alt {
+	color: rgba($color: white, $alpha: 0.9);
+
+	.container {
+		grid-template-columns: 600px 1fr;
+
+		.section-img {
+			justify-self: flex-end;
+		}
+
+		.square {
+			justify-self: flex-start;
+		}
+	}
+}

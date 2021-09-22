@@ -5,10 +5,9 @@
 
 main {
 	position: relative;
-	color: white;
 	text-align: center;
-
 	height: calc(100% - 100px);
+	color: white;
 
 	.container {
 		display: grid;
@@ -23,19 +22,23 @@ main {
 		width: 100%;
 	}
 
+	.line {
+		margin: 20px 0 30px;
+	}
+
 	.left-aside {
-		border-right: 1px solid rgba(255, 255, 255, 0.2);
+		display: grid;
 	}
 
 	.la-text {
-		writing-mode: vertical-lr;
-		text-orientation: upright;
+		writing-mode: vertical-rl;
+		transform: rotate(180deg);
 	}
+
 	.right-aside {
 		display: grid;
 		justify-content: flex-end;
 		align-items: center;
-		border-left: 1px solid rgba(255, 255, 255, 0.2);
 	}
 
 	.ra-content {
@@ -59,66 +62,27 @@ main {
 		width: 100%;
 	}
 
-	p {
-		font-size: 0.75em;
-		line-height: 1.2em;
-		letter-spacing: 0.5em;
-
-		text-transform: uppercase;
-		font-weight: bold;
-		margin-bottom: 15px;
-	}
-
-	.line {
-		display: block;
-		place-self: center;
-		width: 60px;
-		height: 5px;
-		border-radius: 50px;
-		background: $primary-color;
-		margin: 20px 0 30px;
-	}
-
 	.btns {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 
-	button {
-		color: white;
-		width: 200px;
-		height: 60px;
-		font-size: 0.75em;
-		line-height: 1.667em;
-		background: $primary-color;
-		border-radius: 5px;
-		text-transform: uppercase;
-		font-weight: bold;
-	}
-
-	button:last-child {
+	.button:last-child {
 		margin-left: 40px;
 		background: transparent;
 		border: 2px solid white;
 	}
 
-	.hor-top-line {
-		background: rgba(255, 255, 255, 0.2);
+	.hor-line.top {
 		align-self: flex-start;
-		position: absolute;
-
 		top: 13%;
-		height: calc(77% - 60px);
-		width: 1px;
+		height: calc(77% - 60px) !important;
 	}
 
-	.hor-bot-line {
-		background: rgba(255, 255, 255, 0.2);
+	.hor-line.bot {
 		align-self: flex-end;
-		position: absolute;
-		height: 10%;
-		width: 1px;
+		height: 10% !important;
 	}
 
 	.next {

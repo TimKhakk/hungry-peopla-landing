@@ -1,0 +1,40 @@
+section {
+	display: grid;
+	place-items: center;
+	position: relative;
+	padding: 100px 0;
+
+	.container {
+		display: grid;
+		column-gap: 5em;
+		height: auto;
+		grid-template-columns: 1fr 600px;
+	}
+
+	.preheading {
+		position: absolute;
+		align-self: flex-start;
+		top: 43px;
+	}
+
+	.content {
+		display: grid;
+		place-items: center;
+		margin-top: 117px;
+		height: max-content;
+	}
+
+	.subtitle {
+		font-size: 1.125em;
+		line-height: 1.55em;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	.text {
+		font-size: 0.875em;
+		line-height: 1.715em;
+		text-align: center;
+	}
+}

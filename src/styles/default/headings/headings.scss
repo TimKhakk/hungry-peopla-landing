@@ -1,8 +1,41 @@
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Banny Bold Round', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h1 {
 	color: white;
 	font-size: 6em;
 	line-height: 1em;
+}
+
+h2 {
+	font-size: 2.25em;
+	line-height: 1.45em;
+	color: black;
+}
+
+.white {
+	color: white !important;
+}
+
+.preheading {
+	font-size: 0.75em;
+	line-height: 1.2em;
+	letter-spacing: 0.5em;
+
 	text-transform: uppercase;
-	text-align: center;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.postheading {
+	font-size: 0.75em;
+	line-height: 1em;
+	color: #999;
 }
