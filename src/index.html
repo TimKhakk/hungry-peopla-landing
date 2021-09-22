@@ -5,6 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles/index.min.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 		<title>Hungry People</title>
 	</head>
 	<body>
@@ -182,36 +184,105 @@
 		</section>
 
 		<section class="galerie alt">
-			<div class="container">
-				<p class="preheading">specialties</p>
-				<div class="section-img-block">
-					<img
-						class="section-img"
-						src="images/galerie-img.png"
-						alt="повар женщина украшает тарелку с едой"
-					/>
-					<span class="square"></span>
-				</div>
-				<div class="content">
-					<h2 class="white">chocolate pancakes</h2>
-					<span class="line"></span>
-					<p class="subtitle">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
-						molestie est a, tempor magna.
-					</p>
-					<p class="text">
-						Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non
-						ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros,
-						a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
-						pharetra. Nulla facilisis semper laoreet.
-					</p>
+			<p class="preheading">specialties</p>
+			<div class="swiper container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide container">
+						<div class="section-img-block">
+							<img
+								class="section-img"
+								src="images/galerie-img.png"
+								alt="повар женщина украшает тарелку с едой"
+							/>
+							<span class="square"></span>
+						</div>
+						<div class="content">
+							<h2 class="white">chocolate pancakes</h2>
+							<span class="line"></span>
+							<p class="subtitle">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+								molestie est a, tempor magna.
+							</p>
+							<p class="text">
+								Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi
+								non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio
+								vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam
+								convallis pharetra. Nulla facilisis semper laoreet.
+							</p>
+						</div>
+					</div>
+					<div class="swiper-slide container">
+						<div class="section-img-block">
+							<img
+								class="section-img"
+								src="images/galerie-img.png"
+								alt="повар женщина украшает тарелку с едой"
+							/>
+							<span class="square"></span>
+						</div>
+						<div class="content">
+							<h2 class="white">chocolate pancakes</h2>
+							<span class="line"></span>
+							<p class="subtitle">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+								molestie est a, tempor magna.
+							</p>
+							<p class="text">
+								Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi
+								non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio
+								vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam
+								convallis pharetra. Nulla facilisis semper laoreet.
+							</p>
+						</div>
+					</div>
+					<div class="swiper-slide container">
+						<div class="section-img-block">
+							<img
+								class="section-img"
+								src="images/galerie-img.png"
+								alt="повар женщина украшает тарелку с едой"
+							/>
+							<span class="square"></span>
+						</div>
+						<div class="content">
+							<h2 class="white">chocolate pancakes</h2>
+							<span class="line"></span>
+							<p class="subtitle">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+								molestie est a, tempor magna.
+							</p>
+							<p class="text">
+								Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi
+								non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio
+								vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam
+								convallis pharetra. Nulla facilisis semper laoreet.
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
+			<div class="swiper-pagination"></div>
 			<img src="images/galerie-bg.png" alt="сковородка с жаренными овощами" class="bg" />
 
 			<span class="hor-line left"></span>
 			<span class="hor-line center"></span>
 			<span class="hor-line right"></span>
 		</section>
+
+		<script>
+			const swiper = new Swiper('.swiper', {
+				// Optional parameters
+				direction: 'horizontal',
+				loop: true,
+
+				// If we need pagination
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+
+				draggable: true,
+			});
+		</script>
 	</body>
 </html>
