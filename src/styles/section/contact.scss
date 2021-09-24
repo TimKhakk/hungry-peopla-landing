@@ -1,0 +1,38 @@
+.contact {
+	.container {
+		grid-template-columns: 1fr;
+	}
+
+	.content {
+		place-items: initial;
+	}
+
+	.subtitle {
+		width: 50ch;
+		justify-self: center;
+	}
+
+	.send-msg {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(3, max-content);
+		gap: 10px;
+	}
+
+	input {
+		grid-column: span 2;
+	}
+
+	textarea {
+		grid-column: span 6;
+		height: 120px;
+	}
+
+	.info,
+	.button {
+		grid-column: span 3;
+	}
+	.button {
+		width: 100%;
+	}
+}

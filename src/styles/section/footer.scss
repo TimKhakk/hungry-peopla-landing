@@ -1,0 +1,47 @@
+footer {
+	padding: 50px 0;
+	color: white;
+	background: #333;
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, max-content);
+		place-items: center;
+		row-gap: 25px;
+	}
+
+	nav {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		width: 100%;
+		height: 100%;
+	}
+
+	ul {
+		display: grid;
+	}
+
+	li:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+	.info {
+		display: grid;
+		grid-template-columns: initial;
+		gap: 15px;
+		width: 100%;
+		grid-template-rows: repeat(3, max-content);
+		justify-content: end;
+	}
+
+	.social-media {
+		display: grid;
+		grid-template-columns: repeat(3, max-content);
+		gap: 15px;
+		justify-content: end;
+		width: 100%;
+		grid-column: span 2;
+	}
+}

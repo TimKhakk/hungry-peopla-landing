@@ -86,3 +86,34 @@ select {
 input::placeholder {
 	color: #8c8c8c;
 }
+textarea {
+	font-family: 'Open sans', sans-serif;
+	border: none;
+	background: #e3e3e3;
+	border-radius: 5px;
+	height: 60px;
+	padding: 20px;
+	color: #333;
+	font-size: 14px;
+	line-height: 20px;
+}
+textarea::placeholder {
+	color: #8c8c8c;
+}
+.info {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	place-items: center;
+}
+.location,
+.mail,
+.phone {
+	display: grid;
+	place-items: center;
+	grid-template-columns: repeat(2, max-content);
+	gap: 5px;
+	font-weight: bold;
+	font-size: 0.75em;
+	line-height: 1em;
+	color: #999;
+}

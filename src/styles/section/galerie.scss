@@ -1,0 +1,10 @@
+.galerie {
+	padding: 0;
+	display: flex;
+	width: 100%;
+
+	img {
+		object-fit: cover;
+		height: 100%;
+	}
+}

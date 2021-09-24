@@ -98,6 +98,41 @@ input::placeholder {
   color: #8c8c8c;
 }
 
+textarea {
+  font-family: "Open sans", sans-serif;
+  border: none;
+  background: #e3e3e3;
+  border-radius: 5px;
+  height: 60px;
+  padding: 20px;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+textarea::placeholder {
+  color: #8c8c8c;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.location,
+.mail,
+.phone {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, max-content);
+  gap: 5px;
+  font-weight: bold;
+  font-size: 0.75em;
+  line-height: 1em;
+  color: #999;
+}
+
 @font-face {
   font-family: "Banny Bold Round";
   font-style: normal;
@@ -176,10 +211,116 @@ header img {
   align-self: center;
   justify-self: end;
 }
-.book .postheading {
+
+.contact .container {
+  grid-template-columns: 1fr;
+}
+.contact .content {
+  place-items: initial;
+}
+.contact .subtitle {
+  width: 50ch;
+  justify-self: center;
+}
+.contact .send-msg {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, max-content);
+  gap: 10px;
+}
+.contact input {
+  grid-column: span 2;
+}
+.contact textarea {
+  grid-column: span 6;
+  height: 120px;
+}
+.contact .info,
+.contact .button {
+  grid-column: span 3;
+}
+.contact .button {
+  width: 100%;
+}
+
+.events .container {
+  grid-template-columns: 1fr 1fr;
+}
+.events .section-img-block.second h3 {
+  left: 0;
+  right: initial;
+  transform: rotate(180deg);
+}
+.events .section-img-block.second .section-img {
+  justify-self: flex-start;
+}
+.events .section-img-block.second .square {
+  justify-self: flex-end;
+}
+.events h3 {
   position: absolute;
-  align-self: flex-end;
-  bottom: 43px;
+  background: #000;
+  padding: 20px 34px;
+  font-size: 1.5em;
+  line-height: 0.5em;
+  writing-mode: vertical-rl;
+  transform: rotate(360deg);
+  right: 0;
+  top: 0;
+  height: 100%;
+  text-align: left;
+}
+
+footer {
+  padding: 50px 0;
+  color: white;
+  background: #333;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, max-content);
+  place-items: center;
+  row-gap: 25px;
+}
+footer nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+footer ul {
+  display: grid;
+}
+footer li:not(:last-child) {
+  margin-bottom: 15px;
+}
+footer .info {
+  display: grid;
+  grid-template-columns: initial;
+  gap: 15px;
+  width: 100%;
+  grid-template-rows: repeat(3, max-content);
+  justify-content: end;
+}
+footer .social-media {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 15px;
+  justify-content: end;
+  width: 100%;
+  grid-column: span 2;
+}
+
+.galerie {
+  padding: 0;
+  display: flex;
+  width: 100%;
+}
+.galerie img {
+  object-fit: cover;
+  height: 100%;
 }
 
 .first {
@@ -277,6 +418,71 @@ main .next div {
   place-items: center;
 }
 
+.map {
+  padding: 0;
+}
+
+.menu .container {
+  grid-template-columns: 1fr;
+}
+.menu .content {
+  place-items: initial;
+}
+.menu .subtitle {
+  width: 50ch;
+  justify-self: center;
+}
+.menu .menus {
+  display: grid;
+}
+.menu .menus-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  width: max-content;
+  justify-self: center;
+}
+.menu li {
+  display: grid;
+  place-items: center;
+  width: 120px;
+  height: 50px;
+  font-size: 0.75em;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: bold;
+}
+.menu li:not(:last-child) {
+  border-right: 1px solid #d6d6d6;
+}
+.menu .menus-items {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-template-rows: repeat(7, 1fr);
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.menu .item {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 15px;
+  grid-template-rows: max-content max-content;
+}
+.menu .item-name,
+.menu .item-price {
+  font-family: "Banny Bold Round", sans-serif;
+  font-size: 1.125em;
+  line-height: 1em;
+  color: #333;
+}
+.menu .item-subtitle {
+  font-size: 0.75em;
+  line-height: 1.5em;
+  color: #999;
+}
+
 section.alt {
   color: rgba(255, 255, 255, 0.9);
 }
@@ -290,14 +496,14 @@ section.alt .container .square {
   justify-self: flex-start;
 }
 
-section form {
+section .book-table {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, 60px);
   gap: 10px;
   width: 90%;
 }
-section form .button {
+section .book-table .button {
   grid-column: span 2;
   width: 100%;
 }
@@ -344,7 +550,7 @@ section .preheading {
 section .content {
   display: grid;
   place-items: center;
-  margin-top: 117px;
+  align-self: center;
   height: max-content;
 }
 section .subtitle {
@@ -358,6 +564,11 @@ section .text {
   font-size: 0.875em;
   line-height: 1.715em;
   text-align: center;
+}
+section .postheading {
+  position: absolute;
+  align-self: flex-end;
+  bottom: 43px;
 }
 
 .spec .swiper-pagination {

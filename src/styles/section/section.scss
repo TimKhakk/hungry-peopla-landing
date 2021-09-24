@@ -20,7 +20,7 @@ section {
 	.content {
 		display: grid;
 		place-items: center;
-		margin-top: 117px;
+		align-self: center;
 		height: max-content;
 	}
 
@@ -36,5 +36,11 @@ section {
 		font-size: 0.875em;
 		line-height: 1.715em;
 		text-align: center;
+	}
+
+	.postheading {
+		position: absolute;
+		align-self: flex-end;
+		bottom: 43px;
 	}
 }
