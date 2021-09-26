@@ -16,6 +16,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.0.1",
     "sass": "^1.38.0"
   }
 }

@@ -8,4 +8,23 @@
 		align-self: center;
 		justify-self: end;
 	}
+	input,
+	select {
+		width: 100%;
+	}
+	select {
+		appearance: none;
+		cursor: pointer;
+	}
+	label {
+		position: relative;
+		display: flex;
+		align-items: center;
+
+		svg {
+			position: absolute;
+			right: 20px;
+			opacity: 0.5;
+		}
+	}
 }
