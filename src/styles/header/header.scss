@@ -33,3 +33,12 @@ header {
 		z-index: 999;
 	}
 }
+
+// <=1300
+@include max-width(1000px) {
+	header {
+		nav {
+			column-gap: 170px;
+		}
+	}
+}

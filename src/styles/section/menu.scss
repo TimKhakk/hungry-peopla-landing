@@ -71,3 +71,14 @@
 		color: #999;
 	}
 }
+
+// <=1300
+@include max-width(1300px) {
+	.menu {
+		.menus-items {
+			grid-template-columns: repeat(2, max-content);
+			grid-template-rows: repeat(7, 1fr);
+			justify-content: space-evenly;
+		}
+	}
+}

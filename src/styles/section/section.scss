@@ -44,3 +44,22 @@ section {
 		bottom: 43px;
 	}
 }
+
+// <=1300
+@include max-width(1300px) {
+	section {
+		padding: 80px 0;
+
+		.container {
+			column-gap: 4em;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.preheading {
+			top: 33px;
+		}
+		.postheading {
+			bottom: 33px;
+		}
+	}
+}

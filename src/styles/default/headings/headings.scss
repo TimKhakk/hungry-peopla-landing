@@ -39,3 +39,23 @@ h2 {
 	line-height: 1em;
 	color: #999;
 }
+
+// <=1300
+@include max-width(1300px) {
+	h1 {
+		font-size: 5em;
+	}
+	.hor-line.left {
+		transform: translateX(375px);
+	}
+	.hor-line.right {
+		transform: translateX(-375px);
+	}
+}
+
+// <=1300
+@include max-width(1000px) {
+	h1 {
+		font-size: 4em;
+	}
+}

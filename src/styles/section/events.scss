@@ -32,3 +32,14 @@
 		text-align: left;
 	}
 }
+
+// <=1300
+@include max-width(1300px) {
+	.events {
+		.section-img-block.second {
+			.square {
+				left: 220px;
+			}
+		}
+	}
+}

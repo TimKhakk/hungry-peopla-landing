@@ -13,3 +13,20 @@ section.alt {
 		}
 	}
 }
+
+// <=1300
+@include max-width(1300px) {
+	section.alt {
+		.container {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.square {
+			right: 220px;
+			left: initial;
+			border: 16px solid $primary-color;
+			width: 160px;
+			height: 160px;
+		}
+	}
+}

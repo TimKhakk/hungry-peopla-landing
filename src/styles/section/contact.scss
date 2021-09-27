@@ -36,3 +36,13 @@
 		width: 100%;
 	}
 }
+
+// <=1300
+@include max-width(1300px) {
+	.contact {
+		.info,
+		.button {
+			grid-column: span 6;
+		}
+	}
+}

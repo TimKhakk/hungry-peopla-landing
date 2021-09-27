@@ -120,3 +120,13 @@ textarea::placeholder {
 	line-height: 1em;
 	color: #999;
 }
+
+// <=1300
+@include max-width(1300px) {
+	.hor-line.left {
+		transform: translateX(375px);
+	}
+	.hor-line.right {
+		transform: translateX(-375px);
+	}
+}
