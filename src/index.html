@@ -15,6 +15,7 @@
 		<title>Hungry People</title>
 	</head>
 	<body>
+		<span class="size"></span>
 		<div class="first" id="home">
 			<img
 				class="bg"
@@ -23,12 +24,23 @@
 			/>
 			<header>
 				<div class="container">
+					<div class="logo-wrapper">
+						<img class="logo-for-small-screens" src="images/wheel.png" alt="wheel" />
+					</div>
+					<button class="open-side-menu">
+						<svg width="40" height="40" class="icon">
+							<use xlink:href="icons.svg#burger"></use>
+						</svg>
+					</button>
 					<nav>
 						<ul>
 							<li><a class="nav-links" href="#home">Home</a></li>
 							<li><a class="nav-links" href="#about">About</a></li>
 							<li><a class="nav-links" href="#team">Team</a></li>
 							<li><a class="nav-links" href="#book">Booking</a></li>
+							<svg width="24" height="24" class="close-side-menu">
+								<use xlink:href="icons.svg#close"></use>
+							</svg>
 						</ul>
 						<img src="images/wheel.png" alt="wheel" />
 						<ul>
@@ -37,7 +49,28 @@
 							<li><a class="nav-links" href="#events">Events</a></li>
 							<li><a class="nav-links" href="#contact">Contact</a></li>
 						</ul>
+						<div class="nav_media">
+							<a href="https://www.facebook.com/" class="icon-wrapper">
+								<svg width="20" height="20" class="icon">
+									<use xlink:href="icons.svg#facebook"></use>
+								</svg>
+							</a>
+
+							<a href="https://twitter.com/" class="icon-wrapper">
+								<svg width="20" height="20" class="icon">
+									<use xlink:href="icons.svg#twitter"></use>
+								</svg>
+							</a>
+
+							<a href="https://www.instagram.com/" class="icon-wrapper">
+								<svg width="20" height="20" class="icon">
+									<use xlink:href="icons.svg#inst"></use>
+								</svg>
+							</a>
+						</div>
+						<span class="nav_time">Mon - Fri: 8AM - 10PM, Sat - Sun: 8AM - 3AM</span>
 					</nav>
+					<div class="mask"></div>
 				</div>
 			</header>
 			<main>

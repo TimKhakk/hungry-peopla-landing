@@ -46,3 +46,40 @@
 		}
 	}
 }
+
+// <=1000
+@include max-width(1000px) {
+	.contact {
+		.content {
+			width: 100% !important;
+		}
+	}
+}
+
+// <=800
+@include max-width(800px) {
+	.contact {
+		.send-msg {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: initial;
+			gap: 10px;
+		}
+
+		input,
+		textarea,
+		.info,
+		.button {
+			grid-column: span 1;
+		}
+
+		.info {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.info * {
+			margin-bottom: 15px;
+		}
+	}
+}

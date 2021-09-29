@@ -2,6 +2,7 @@ const navLinks = document.querySelectorAll('.nav-links');
 const exploreBtn = document.querySelector('#explore');
 const bookTableBtn = document.querySelector('#book-table');
 const nextBtn = document.querySelector('#next');
+const logoForSmallScreens = document.querySelector('.logo-for-small-screens');
 
 const smoothScroll = e => {
 	e.preventDefault();
@@ -35,3 +36,4 @@ navLinks.forEach(link => {
 uniqueScroll(exploreBtn, 'menu');
 uniqueScroll(bookTableBtn, 'book');
 uniqueScroll(nextBtn, 'about');
+uniqueScroll(logoForSmallScreens, 'home');

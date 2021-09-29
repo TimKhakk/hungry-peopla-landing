@@ -3,6 +3,14 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+.size {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	font-size: 36px;
+	color: tomato;
+	z-index: 999;
+}
 
 body {
 	font-family: 'Open sans', sans-serif;
@@ -99,6 +107,7 @@ textarea {
 	color: #333;
 	font-size: 14px;
 	line-height: 20px;
+	resize: none;
 }
 textarea::placeholder {
 	color: #8c8c8c;
@@ -128,5 +137,15 @@ textarea::placeholder {
 	}
 	.hor-line.right {
 		transform: translateX(-375px);
+	}
+}
+
+// <=800
+@include max-width(800px) {
+	.hor-line.left {
+		transform: translateX(270px);
+	}
+	.hor-line.right {
+		transform: translateX(-270px);
 	}
 }

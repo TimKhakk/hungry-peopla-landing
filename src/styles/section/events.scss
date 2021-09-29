@@ -43,3 +43,23 @@
 		}
 	}
 }
+
+// <=1000
+@include max-width(1000px) {
+	.events {
+		.section-img-block.second {
+			grid-row: 2/3;
+		}
+	}
+}
+
+// <=800
+@include max-width(800px) {
+	.events {
+		.section-img-block.second {
+			.square {
+				left: 150px;
+			}
+		}
+	}
+}

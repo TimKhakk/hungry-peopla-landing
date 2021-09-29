@@ -51,6 +51,7 @@ main {
 		place-items: center;
 		width: 60px;
 		height: 60px;
+		fill: white;
 		background: transparent;
 		border: 1px solid rgba(255, 255, 255, 0.2);
 		border-radius: 50%;
@@ -105,6 +106,74 @@ main {
 			border-radius: 50%;
 			display: grid;
 			place-items: center;
+		}
+	}
+}
+
+// <=1000
+@include max-width(1000px) {
+	main {
+		.hor-line.top {
+			align-self: flex-start;
+			top: 5%;
+			height: calc(85% - 60px) !important;
+		}
+	}
+}
+
+// <=800
+@include max-width(800px) {
+	main {
+		.container {
+			align-items: flex-start;
+			padding-top: 20%;
+		}
+		.hor-line.left,
+		.hor-line.right {
+			display: none;
+		}
+
+		.container {
+			grid-template-columns: 1fr;
+		}
+
+		aside {
+			display: none !important;
+		}
+
+		.next {
+			bottom: 30%;
+		}
+		.hor-line.top {
+			top: -100px;
+			height: calc(70% + 40px) !important;
+		}
+		.hor-line.bot {
+			height: 30% !important;
+		}
+	}
+}
+// <=500
+@include max-width(500px) {
+	main {
+		.btns {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.button:last-child {
+			margin-left: 0;
+			margin-top: 20px;
+		}
+		.next {
+			bottom: 20%;
+		}
+		.hor-line.top {
+			top: -100px;
+			height: calc(80% + 40px) !important;
+		}
+		.hor-line.bot {
+			height: 20% !important;
 		}
 	}
 }

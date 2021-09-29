@@ -28,3 +28,30 @@
 		}
 	}
 }
+// <=1300
+@include max-width(1300px) {
+	.book {
+		.content {
+			width: 100%;
+		}
+	}
+}
+
+// <=1000
+@include max-width(1000px) {
+	.book {
+		.container {
+			grid-template-columns: 1fr;
+		}
+		.section-img-block {
+			display: none;
+		}
+	}
+}
+
+// <=500
+@include max-width(500px) {
+	.book {
+		padding-top: 25px;
+	}
+}

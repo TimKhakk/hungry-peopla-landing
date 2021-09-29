@@ -44,5 +44,38 @@ footer {
 		justify-content: end;
 		width: 100%;
 		grid-column: span 2;
+
+		svg {
+			fill: white;
+		}
+	}
+}
+// // <=800
+@include max-width(800px) {
+	footer {
+		padding: 30px 0;
+	}
+}
+
+// // <=800
+@include max-width(500px) {
+	footer {
+		padding: 30px 0;
+
+		.container {
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(3, max-content);
+			place-items: center;
+			row-gap: 25px;
+		}
+
+		.social-media {
+			grid-column: span 1;
+			justify-content: space-evenly;
+		}
+
+		.info {
+			justify-content: center;
+		}
 	}
 }

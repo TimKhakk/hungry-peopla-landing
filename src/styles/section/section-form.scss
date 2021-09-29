@@ -12,3 +12,29 @@ section {
 		}
 	}
 }
+
+// <=1000
+@include max-width(1000px) {
+	section {
+		.book-table {
+			gap: 8px;
+			width: 100%;
+		}
+	}
+}
+
+// <=500
+@include max-width(500px) {
+	section {
+		.book-table {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: initial;
+
+			.button {
+				grid-column: initial;
+				width: 100%;
+			}
+		}
+	}
+}

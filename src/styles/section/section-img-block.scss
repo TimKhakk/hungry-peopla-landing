@@ -41,3 +41,45 @@ section {
 		}
 	}
 }
+
+// <=1000
+@include max-width(1000px) {
+	section {
+		.section-img-block {
+			grid-row: 1/2;
+			place-items: center;
+			width: 300px;
+			height: 300px;
+			margin: 0 auto;
+		}
+
+		.square {
+			left: 220px;
+			border: 16px solid $primary-color;
+			width: 160px;
+			height: 160px;
+		}
+	}
+}
+
+// <=500
+@include max-width(500px) {
+	section {
+		.section-img-block {
+			width: 200px;
+			height: 200px;
+		}
+
+		.section-img {
+			width: 200px;
+			height: 200px;
+		}
+
+		.square {
+			left: 150px;
+			border: 12px solid $primary-color;
+			width: 100px;
+			height: 100px;
+		}
+	}
+}
