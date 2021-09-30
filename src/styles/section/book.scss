@@ -21,6 +21,12 @@
 		display: flex;
 		align-items: center;
 
+		.placeholder {
+			position: absolute;
+			left: 20px;
+			color: #8c8c8c;
+		}
+
 		svg {
 			position: absolute;
 			right: 20px;

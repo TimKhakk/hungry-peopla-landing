@@ -1,10 +1,65 @@
 .galerie {
-	padding: 0;
 	display: flex;
 	width: 100%;
+	padding-bottom: 0 !important;
+	position: relative;
+
+	.container {
+		display: grid;
+		grid-template: max-content 1fr / 1fr;
+		gap: 50px;
+	}
+	.head {
+		display: grid;
+		place-items: center;
+	}
+
+	.subtitle {
+		width: 50ch;
+	}
+	.text {
+		width: 82ch;
+	}
+
+	.content {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.content {
+		cursor: pointer;
+	}
 
 	img {
 		object-fit: cover;
 		height: 100%;
+		width: 100%;
+	}
+
+	.modal-bg {
+		position: fixed;
+	}
+}
+
+// <=1000
+@include max-width(1000px) {
+	.galerie {
+		.content {
+			grid-template: 1fr 1fr /1fr 1fr;
+		}
+
+		.text,
+		.subtitle {
+			width: auto;
+		}
+	}
+}
+
+// <=650
+@include max-width(650px) {
+	.galerie {
+		.content {
+			grid-template: repeat(4, 1fr) / 1fr;
+		}
 	}
 }

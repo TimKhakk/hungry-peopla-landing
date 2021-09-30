@@ -23,11 +23,3 @@ openBtn.addEventListener('click', () => {
 		item.addEventListener('click', closeMenu);
 	});
 });
-
-html.addEventListener('mousewheel', () => {
-	if (window.scrollY > 600) {
-		navMask.style.opacity = 1;
-	} else {
-		navMask.style.opacity = 0;
-	}
-});

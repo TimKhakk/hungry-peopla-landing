@@ -15,7 +15,6 @@
 		<title>Hungry People</title>
 	</head>
 	<body>
-		<span class="size"></span>
 		<div class="first" id="home">
 			<img
 				class="bg"
@@ -191,8 +190,9 @@
 						<input type="mail" name="mail" placeholder="Email" />
 						<input type="phone" name="phone" placeholder="Phone" required />
 						<label>
-							<select type="number" name="people" placeholder="People" required>
-								<option value="people" selected disabled>People</option>
+							<span class="placeholder">People</span>
+							<select class="check" type="number" name="people" placeholder="People" required>
+								<option value="" selected disabled></option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -205,16 +205,18 @@
 							</svg>
 						</label>
 						<label>
-							<input type="date" name="date" placeholder="Date (mm/dd)" required />
+							<span class="placeholder">Date (mm/dd)</span>
+							<input class="check" type="date" name="date" required />
 							<svg width="15" height="15" class="icon">
 								<use xlink:href="icons.svg#arrow-down"></use>
 							</svg>
 						</label>
 						<label>
+							<span class="placeholder">Time</span>
 							<input
+								class="check"
 								type="time"
 								name="time"
-								placeholder="Time"
 								min="8:00"
 								max="22:00"
 								title="opening at 8:00. closing at 22:00"
@@ -380,12 +382,39 @@
 		</section>
 
 		<section class="galerie" id="galerie">
-			<img src="images/gal-4.png" alt="" />
-			<img src="images/gal-1.png" alt="" />
-			<img src="images/gal-2.png" alt="" />
-			<img src="images/gal-3.png" alt="" />
-			<img src="images/gal-4.png" alt="" />
-			<img src="images/gal-2.png" alt="" />
+			<div class="container">
+				<div class="head">
+					<h2>Galerie</h2>
+					<span class="line"></span>
+					<p class="subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+						molestie est a, tempor magna.
+					</p>
+					<p class="text">
+						Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non
+						ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros,
+						a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+						pharetra. Nulla facilisis semper laoreet.
+					</p>
+				</div>
+
+				<div class="content">
+					<div class="content-item">
+						<img src="images/gal-1.png" alt="" />
+					</div>
+					<div class="content-item">
+						<img src="images/gal-2.png" alt="" />
+					</div>
+					<div class="content-item">
+						<img src="images/gal-3.png" alt="" />
+					</div>
+					<div class="content-item">
+						<img src="images/gal-4.png" alt="" />
+					</div>
+				</div>
+
+				<div class="modal-bg"></div>
+			</div>
 		</section>
 
 		<section class="contact" id="contact">
@@ -404,7 +433,6 @@
 						<input type="phone" name="phone" placeholder="Phone" required />
 						<textarea
 							name="message"
-							id=""
 							cols="30"
 							placeholder="Message"
 							rows="10"
