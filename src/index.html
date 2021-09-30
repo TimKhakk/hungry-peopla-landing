@@ -10,23 +10,29 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
 		/>
-		<script src="https://cdn.jsdelivr.net/npm/flatpickr" type="module"></script>
+		<script src="https://cdn.jsdelivr.net/npm/flatpickr" defer type="module"></script>
 		<script src="main.min.js" defer type="module"></script>
 		<title>Hungry People</title>
 	</head>
 	<body>
 		<div class="first" id="home">
-			<img
-				class="bg"
-				src="images/first-bg.png"
-				alt="стол с приготовленной рыбой в темныйх тонах"
-			/>
+			<picture>
+				<source media="(max-height: 500px)" srcset="images/first-bg500h.webp" />
+				<source media="(max-width: 768px)" srcset="images/first-bg768w.webp" />
+				<source media="(max-width: 1024px)" srcset="images/first-bg1024w.webp" />
+				<img
+					class="bg"
+					src="
+					images/first-bg.webp"
+					alt="стол с приготовленной рыбой в темныйх тонах"
+				/>
+			</picture>
 			<header>
 				<div class="container">
 					<div class="logo-wrapper">
-						<img class="logo-for-small-screens" src="images/wheel.png" alt="wheel" />
+						<img class="logo-for-small-screens" src="images/wheel.webp" alt="wheel" />
 					</div>
-					<button class="open-side-menu">
+					<button aria-label="burger" class="open-side-menu">
 						<svg width="40" height="40" class="icon">
 							<use xlink:href="icons.svg#burger"></use>
 						</svg>
@@ -41,7 +47,7 @@
 								<use xlink:href="icons.svg#close"></use>
 							</svg>
 						</ul>
-						<img src="images/wheel.png" alt="wheel" />
+						<img src="images/wheel.webp" alt="wheel" />
 						<ul>
 							<li><a class="nav-links" href="#menu">Menu</a></li>
 							<li><a class="nav-links" href="#galerie">Galerie</a></li>
@@ -82,8 +88,8 @@
 						<h1>Hungry people</h1>
 						<span class="line"></span>
 						<div class="btns">
-							<button class="button" id="book-table">Book table</button>
-							<button class="button" id="explore">Explore</button>
+							<button aria-label="book" class="button" id="book-table">Book table</button>
+							<button aria-label="explore" class="button" id="explore">Explore</button>
 						</div>
 					</div>
 					<aside class="right-aside">
@@ -141,7 +147,7 @@
 				</div>
 
 				<div class="section-img-block">
-					<img class="section-img" src="images/about-img.png" alt="" />
+					<img class="section-img" src="images/about-img.webp" alt="" />
 					<span class="square"></span>
 				</div>
 			</div>
@@ -152,8 +158,9 @@
 				<p class="preheading">our team</p>
 				<div class="section-img-block">
 					<img
+						loading="lazy"
 						class="section-img"
-						src="images/team-img.png"
+						src="images/team-img.webp"
 						alt="повар женщина украшает тарелку с едой"
 					/>
 					<span class="square"></span>
@@ -173,7 +180,18 @@
 					</p>
 				</div>
 			</div>
-			<img src="images/team-bg.png" alt="сковородка с жаренными овощами" class="bg" />
+			<picture>
+				<source media="(max-height: 500px)" srcset="images/team-bg500h.webp" />
+				<source media="(max-width: 768px)" srcset="images/team-bg768w.webp" />
+				<source media="(max-width: 1024px)" srcset="images/team-bg1024w.webp" />
+
+				<img
+					loading="lazy"
+					src="images/team-bg.webp"
+					alt="сковородка с жаренными овощами"
+					class="bg"
+				/>
+			</picture>
 
 			<span class="hor-line left"></span>
 			<span class="hor-line center"></span>
@@ -227,12 +245,12 @@
 							</svg>
 						</label>
 
-						<button class="button">book now</button>
+						<button aria-label="submit" class="button">book now</button>
 					</form>
 				</div>
 
 				<div class="section-img-block">
-					<img class="section-img" src="images/book-img.png" alt="" />
+					<img loading="lazy" class="section-img" src="images/book-img.webp" alt="" />
 					<span class="square"></span>
 				</div>
 
@@ -250,8 +268,9 @@
 					<div class="swiper-slide container">
 						<div class="section-img-block">
 							<img
+								loading="lazy"
 								class="section-img"
-								src="images/spec-img.png"
+								src="images/spec-img.webp"
 								alt="повар женщина украшает тарелку с едой"
 							/>
 							<span class="square"></span>
@@ -274,8 +293,9 @@
 					<div class="swiper-slide container">
 						<div class="section-img-block">
 							<img
+								loading="lazy"
 								class="section-img"
-								src="images/spec-img.png"
+								src="images/spec-img.webp"
 								alt="повар женщина украшает тарелку с едой"
 							/>
 							<span class="square"></span>
@@ -298,8 +318,9 @@
 					<div class="swiper-slide container">
 						<div class="section-img-block">
 							<img
+								loading="lazy"
 								class="section-img"
-								src="images/spec-img.png"
+								src="images/spec-img.webp"
 								alt="повар женщина украшает тарелку с едой"
 							/>
 							<span class="square"></span>
@@ -322,7 +343,19 @@
 				</div>
 			</div>
 			<div class="swiper-pagination"></div>
-			<img src="images/spec-bg.png" alt="сковородка с жаренными овощами" class="bg" />
+
+			<picture>
+				<source media="(max-height: 500px)" srcset="images/spec-bg500h.webp" />
+				<source media="(max-width: 768px)" srcset="images/spec-bg768w.webp" />
+				<source media="(max-width: 1024px)" srcset="images/spec-bg1024w.webp" />
+
+				<img
+					loading="lazy"
+					src="images/spec-bg.webp"
+					alt="сковородка с жаренными овощами"
+					class="bg"
+				/>
+			</picture>
 
 			<span class="hor-line left"></span>
 			<span class="hor-line center"></span>
@@ -341,13 +374,13 @@
 
 					<div class="menus">
 						<ul class="menus-nav">
-							<li><button class="menuBtn">soupe</button></li>
-							<li><button class="menuBtn">pizza</button></li>
-							<li><button class="menuBtn">pasta</button></li>
-							<li><button class="menuBtn">desert</button></li>
-							<li><button class="menuBtn">wine</button></li>
-							<li><button class="menuBtn">beer</button></li>
-							<li><button class="menuBtn">drinks</button></li>
+							<li><button aria-label="button" class="menuBtn">soupe</button></li>
+							<li><button aria-label="button" class="menuBtn">pizza</button></li>
+							<li><button aria-label="button" class="menuBtn">pasta</button></li>
+							<li><button aria-label="button" class="menuBtn">desert</button></li>
+							<li><button aria-label="button" class="menuBtn">wine</button></li>
+							<li><button aria-label="button" class="menuBtn">beer</button></li>
+							<li><button aria-label="button" class="menuBtn">drinks</button></li>
 						</ul>
 						<div class="menus-items"></div>
 					</div>
@@ -359,12 +392,22 @@
 			<div class="container">
 				<p class="preheading">private events</p>
 				<div class="section-img-block">
-					<img class="section-img" src="images/events-img-1.png" alt="wedding rings" />
+					<img
+						loading="lazy"
+						class="section-img"
+						src="images/events-img-1.webp"
+						alt="wedding rings"
+					/>
 					<h3>Weddings</h3>
 					<span class="square"></span>
 				</div>
 				<div class="section-img-block second">
-					<img class="section-img" src="images/events-img-2.png" alt="обручальные кольца" />
+					<img
+						loading="lazy"
+						class="section-img"
+						src="images/events-img-2.webp"
+						alt="обручальные кольца"
+					/>
 					<h3>Corporate perties</h3>
 					<span class="square"></span>
 				</div>
@@ -374,7 +417,12 @@
 					use the contact form.
 				</p>
 			</div>
-			<img src="images/spec-bg.png" alt="сковородка с жаренными овощами" class="bg" />
+			<img
+				loading="lazy"
+				src="images/spec-bg.webp"
+				alt="сковородка с жаренными овощами"
+				class="bg"
+			/>
 
 			<span class="hor-line left"></span>
 			<span class="hor-line center"></span>
@@ -400,16 +448,16 @@
 
 				<div class="content">
 					<div class="content-item">
-						<img src="images/gal-1.png" alt="" />
+						<img loading="lazy" src="images/gal-1.webp" alt="" />
 					</div>
 					<div class="content-item">
-						<img src="images/gal-2.png" alt="" />
+						<img loading="lazy" src="images/gal-2.webp" alt="" />
 					</div>
 					<div class="content-item">
-						<img src="images/gal-3.png" alt="" />
+						<img loading="lazy" src="images/gal-3.webp" alt="" />
 					</div>
 					<div class="content-item">
-						<img src="images/gal-4.png" alt="" />
+						<img loading="lazy" src="images/gal-4.webp" alt="" />
 					</div>
 				</div>
 
@@ -459,7 +507,7 @@
 								office@mindblister.com
 							</span>
 						</div>
-						<button class="button">book now</button>
+						<button aria-label="submit" class="button">book now</button>
 					</form>
 				</div>
 			</div>
@@ -467,6 +515,7 @@
 
 		<section class="map" id="map">
 			<iframe
+				title="map"
 				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39734.40571434947!2d-0.1365983!3d51.5058706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sru!4v1632465596400!5m2!1sen!2sru"
 				width="100%"
 				height="450"
@@ -481,7 +530,7 @@
 				<p class="subtitle" id="modal-subtitle">The reservation was successfully processed</p>
 				<span class="line"> </span>
 				<p class="text" id="modal-text">Thank you for choosing us</p>
-				<button class="button close-modal">ok</button>
+				<button aria-label="close modal" class="button close-modal">ok</button>
 				<svg class="icon close-modal">
 					<use href="icons.svg#close"></use>
 				</svg>

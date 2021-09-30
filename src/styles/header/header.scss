@@ -212,3 +212,10 @@ header {
 		}
 	}
 }
+
+// <=800
+@include max-height(414px) {
+	header {
+		height: 50px;
+	}
+}

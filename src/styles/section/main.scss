@@ -177,3 +177,38 @@ main {
 		}
 	}
 }
+
+// <=500 height
+@include max-height(500px) {
+	main {
+		.container {
+			padding-top: 0;
+		}
+		.btns {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.button:last-child {
+			margin: 0;
+			margin-left: 20px;
+		}
+		.next {
+			bottom: 8%;
+		}
+		.hor-line.top {
+			top: -100px;
+			height: calc(92% + 40px) !important;
+		}
+		.hor-line.bot {
+			height: 8% !important;
+		}
+	}
+}
+
+// <=800
+@include max-height(414px) {
+	main {
+		height: calc(100% - 50px);
+	}
+}
